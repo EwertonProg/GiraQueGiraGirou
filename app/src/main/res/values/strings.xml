@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GiraQueGiraGirou</string>
+    <string name="Pontos">Pontos: </string>
+    <string name="rolar">ROLAR</string>
+    <string name="parar">PARAR</string>
+    <string name="reiniciar">REINICIAR</string>
+</resources>

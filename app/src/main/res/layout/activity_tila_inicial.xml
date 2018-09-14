@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TilaInicial"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:id="@+id/textPontos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Pontos"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/dice1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPontos" />
+
+    <Button
+        android:id="@+id/btRolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rolar"
+        app:layout_constraintTop_toBottomOf="@+id/imgDado"
+        android:onClick="Rolar"/>
+
+    <Button
+        android:id="@+id/btParar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parar"
+        app:layout_constraintLeft_toRightOf="@id/btRolar"
+        app:layout_constraintTop_toBottomOf="@+id/imgDado"
+        android:onClick="Parar"/>
+
+    <Button
+        android:id="@+id/btReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reiniciar"
+        app:layout_constraintLeft_toRightOf="@id/btParar"
+        app:layout_constraintTop_toBottomOf="@+id/imgDado"
+        android:onClick="Reiniciar"/>
+
+
+</android.support.constraint.ConstraintLayout>
